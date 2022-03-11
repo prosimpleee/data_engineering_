@@ -18,4 +18,3 @@ Materialized Views - stores the execution of the request instead of the text of 
 Data Compression:
 - Method Page - for archived data (old partitions).
 - Method Row - for almost new data.
-
