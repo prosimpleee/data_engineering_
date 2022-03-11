@@ -11,4 +11,5 @@ What problems may arise if we start writing analytical queries and building repo
 - Data Quality (London, Lnd, LONDON- different cities in Group By clause).
 - Issuing access to different tables for the user.
 
-[architecture.pdf](https://github.com/prosimpleee/data_engineering_/files/8235915/architecture.pdf)
+![architecture](https://user-images.githubusercontent.com/55916170/157976157-e4ffdc66-8581-4a6e-8b68-a132ddb30a1d.png)
+
