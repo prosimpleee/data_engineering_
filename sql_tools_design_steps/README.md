@@ -1,8 +1,9 @@
 **Physical aspects of storage:**
 
 Partition:
+ - Partition allows you to conveniently transfer data for the desired day/week/month or year.
  - Splits the fact table into sections by date, which can be placed on different filegroups (different disks).
-
+ 
 Indexes in the fact table:
 - Clustered Index by date_id.
 - Non clustered index by important foreign keys.
