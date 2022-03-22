@@ -1,4 +1,4 @@
--- 1 Step: Ñreate Partition Function
+-- 1 Step: Create Partition Function
 CREATE PARTITION FUNCTION PartDate (datetime)
 	AS 
 		RANGE FOR VALUES (
