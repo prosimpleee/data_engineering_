@@ -2,6 +2,25 @@
 Requirements for the physical structure of DWH
 
 ## Partition:
+```
+-- 1 Step:
+CREATE PARTITION FUNCTION PartDate (column_type)
+   AS 
+     RANGE FOR VALUES (
+                      'board_1',
+                      'board_2',
+                      'board_3'
+                                );
+-- 2 Step:
+CREATE PARTITION SCHEME scheme_name 
+   AS
+     PARTITION PartDate TO (
+                      'filegroup_1',
+                      'filegroup_2',
+                      'filegroup_3',
+                      'filegroup_4'
+                                  );
+```
  - Partition allows you to conveniently transfer data for the desired day/week/month or year.
  - Splits the fact table into sections by date, which can be placed on different filegroups (different disks).
  
