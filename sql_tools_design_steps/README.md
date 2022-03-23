@@ -2,7 +2,7 @@
 Requirements for the physical structure of DWH
 
 ## Partition:
-```
+```sql
 -- 1 Step:
 CREATE PARTITION FUNCTION PartDate (column_type)
    AS 
