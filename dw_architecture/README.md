@@ -1,7 +1,8 @@
-***DWH Architecture***
+# DWH Architecture
 
 Data Warehouse is primarily optimized for reporting and analytics.
-What problems may arise if we start writing analytical queries and building reports based on OLTP?
+
+## What problems may arise if we start writing analytical queries and building reports based on OLTP?
 
 - Several heterogeneous data sources (CRM, another DB, Files).
 - Inconsistent data (intermediate results after query execution).
