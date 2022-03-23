@@ -1,10 +1,12 @@
-**Designing Fact Tables:**
+# DWH Logic Design
+
+## Designing Fact Tables:
 - Business facts (events) -> become tables (example: Orders).
 - Facts are the subject of business analysis.
 - One fact - one table.
 In my example, fact Orders: one row is one product order. I could add another fact table that would describe the buyer's general order.
 
-**Dimension Table Design:**
+## Dimension Table Design: ##
 - Dim tables attributes will become criteria for (group, filter, sort) in reports.
 - Dim Tables should not grow at the same rate as fact tables.
 - Data granulation for analysis (star or snowflake schemas).
