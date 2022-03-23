@@ -1,4 +1,4 @@
-# Physical aspects of storage: #
+# Physical aspects of DWH: #
 Requirements for the physical structure of DWH
 
 ## Partition:
