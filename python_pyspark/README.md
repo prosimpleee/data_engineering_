@@ -17,7 +17,7 @@ spark = SparkSession.builder.getOrCreate()
 spark \
   .read \
   .option('header', True) \
-  .option('inferSchema', 'true')\            # get types
+  .option('inferSchema', True)\              # get types
   .csv(f'path/file_name.csv') \              # path + file name
   .createOrReplaceTempView('business_sales') # create view
 ```
