@@ -30,8 +30,14 @@ df = spark.table('your_view')
 ## Projects:
 **1. cars_prices.csv:** 
 - I have processed a csv file related to the sale of cars. I selected the fields I needed and did the aggregation.
+https://github.com/prosimpleee/data_engineering_/blob/main/python_pyspark/cars_prices.ipynb
 
 **2. business_sales.csv tasks:** 
 - How much money each customer spent per month? 
 - How many different items of goods he bought?
 - What goods he bought most often?
+https://github.com/prosimpleee/data_engineering_/blob/main/python_pyspark/business_sales_pyspark.ipynb
+
+**3. zara_products:**
+- Find the dependence of the price on the presented colors.
+https://github.com/prosimpleee/data_engineering_/blob/main/python_pyspark/zara_products_color.ipynb
