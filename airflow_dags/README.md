@@ -43,3 +43,7 @@ with DAG(
        default_args=default_args
 ) as dag:
 ```
+## Dags:
+- [Covid Status ETL](https://github.com/prosimpleee/data_engineering_/blob/main/airflow_dags/covid_status_etl/covid_status.py) 
+- [Currency ETL](https://github.com/prosimpleee/data_engineering_/blob/main/airflow_dags/currency_etl/currency_etl.py) 
+- [Tables Names](https://github.com/prosimpleee/data_engineering_/blob/main/airflow_dags/tables_prod_postgresql/tables_prod.py) 
