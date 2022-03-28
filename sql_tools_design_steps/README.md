@@ -35,7 +35,7 @@ CREATE PARTITION SCHEME scheme_name
 - ColumnStore Index – is best adapted for aggregation.
 
 ## Materialized Views:
-- stores the execution of the request instead of the text of the request.
+- Stores the execution of the request instead of the text of the request.
 
 ## Data Compression:
 - Method Page - for archived data (old partitions).
