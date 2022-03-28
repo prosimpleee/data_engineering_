@@ -14,4 +14,5 @@ In my example, fact Orders: one row is one product order. I could add another fa
 The full version scheme and part version scheme show of the object data model, business area - "Orders".
 
 **[Full Version Scheme](https://github.com/prosimpleee/data_engineering_/blob/main/schemes/full_version_scheme.png)**
+
 **[Part Version Scheme](https://github.com/prosimpleee/data_engineering_/blob/main/schemes/part_version_scheme.png)**
