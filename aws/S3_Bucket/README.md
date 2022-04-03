@@ -4,10 +4,10 @@ Amazon guarantees: 99.99% availability, 99.99999999999% durability
 Data in S3 is written to different places
 
 ## S3 is used for:
-- backup & recovery (backup database, servers, disks)
-- data archiving (glacier)
-- big data analytics
-- web sites(without php, java or smth else)
+- Backup & recovery (backup database, servers, disks)
+- Data archiving (glacier)
+- Big data analytics
+- Web sites(without php, java or smth else)
 
 Maximum file size 5TB (special method);
 Max file size per 1 put 160GB.
@@ -17,3 +17,32 @@ Max file size per 1 put 160GB.
 - Amazon s3 Standard - Infrequent Access (for files that are not needed very often, 2 data centers for data storage)
 - Reduced Redundancy Storage (very cheap, for files that are easy to restore, 1 data center for data storage)
 - Amazon Glacier (for archived data, slow file access)
+
+## Bucket Versioning
+- Enabled/ bucket versioning allows you to select any version of your modified file
+- Disabled/ bucket versioning doesn't let you select any version of your modified file
+- Bucket Versioning setting can always be changed in: bucket name - properties - Bucket Versioning - Edit
+
+## Tags
+- Makes it possible to quickly find a bucket among other buckets
+
+## Server access logging
+- Makes it possible to write logging to the bucket
+
+## Make a bucket public & File in Amazon S3
+1. Disable all permissions
+2. Upload your file
+3. Choose Storage class
+4. UPLOAD
+5. Link: https://testing-bucket-git-prosimplee.s3.eu-west-2.amazonaws.com/test_read_s3.txt
+
+## Now we can read file from S3 bucket (Python)
+```python
+import boto3
+s3_client = boto3.client('s3')
+response = s3_client.get_object(Bucket = 'testing-bucket-git-prosimplee', Key = 'test_read_s3.txt')
+data = response['Body'].read()
+print(data.decode())
+```
+![image](https://user-images.githubusercontent.com/55916170/161436201-03f4130a-3e50-40c0-a020-913f3ec0b0ae.png)
+
