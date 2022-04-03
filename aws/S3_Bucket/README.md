@@ -47,7 +47,13 @@ print(data.decode())
 ![image](https://user-images.githubusercontent.com/55916170/161436201-03f4130a-3e50-40c0-a020-913f3ec0b0ae.png)
 
 ## Cross-Region Replication S3 Buckets
-- Be sure to enable "bucket Versioning" in two buckets
+Be sure to enable "bucket Versioning" in two buckets
+1. Create replication name
+2. Choose a rule scope
+3. Where to copy data? Destination (bucket)
+4. Issue a role to write data from the source to the backup
+5. Choosing how to store data in a backup
+6. Click save
 ![image](https://user-images.githubusercontent.com/55916170/161440638-88edade8-de7b-4685-94ac-2f35abf91631.png)
 
 
