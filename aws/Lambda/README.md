@@ -19,3 +19,11 @@ You can run a Lambda function on:
 3. What can this function do in aws account? (Read Only S3)
 ![image](https://user-images.githubusercontent.com/55916170/161853168-183867ac-a109-4550-be48-f9a4afb7f86d.png)
 
+## How it works?
+![image](https://user-images.githubusercontent.com/55916170/162071318-077485d2-7fbf-4732-b5bf-cf08ad440e66.png)
+1. lambda-create-s3-buckets-prosimple: lambda function that creates S3 bucket 
+- [Lambda Create S3 Bucket](https://github.com/prosimpleee/data_engineering_/blob/main/aws/Lambda/lambda-createS3-bucket.py)
+2. lambda-list-s3-prosimple: shows the names of all the doors i have in S3 
+- [Lambda List S3 Buckets](https://github.com/prosimpleee/data_engineering_/blob/main/aws/Lambda/lambda-listS3-buckets.py)
+
+
