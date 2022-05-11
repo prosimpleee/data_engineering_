@@ -4,12 +4,12 @@
 -- https://platform.stratascratch.com/coding/9915-highest-cost-orders?code_type=1
 
 # customers
-id: int
-first_name: varchar
-last_name: varchar
-city: varchar
-address: varchar
-phone_number: varchar
+# id: int
+# first_name: varchar
+# last_name: varchar
+# city: varchar
+# address: varchar
+# phone_number: varchar
 
 # orders
 # id: int
