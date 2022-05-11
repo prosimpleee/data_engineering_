@@ -1,6 +1,6 @@
-# Workers With The Highest Salaries
-# Find the titles of workers that earn the highest salary. Output the highest-paid title or multiple titles that share the highest salary.
-# https://platform.stratascratch.com/coding/10353-workers-with-the-highest-salaries?code_type=1
+-- Workers With The Highest Salaries
+-- Find the titles of workers that earn the highest salary. Output the highest-paid title or multiple titles that share the highest salary.
+-- https://platform.stratascratch.com/coding/10353-workers-with-the-highest-salaries?code_type=1
 
 # worker
 # worker_id: int
