@@ -45,3 +45,7 @@ df = spark.table('your_view')
 
 [Click here: zara_products project](https://github.com/prosimpleee/data_engineering_/blob/main/python_pyspark/zara_products_color.ipynb) 
 
+**4. company_dataset:**
+- Find average count of employees by country.
+
+[Click here: company_dataset project](https://github.com/prosimpleee/data_engineering_/blob/main/python_pyspark/company_dataset.ipynb) 
