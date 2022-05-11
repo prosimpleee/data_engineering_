@@ -1,7 +1,7 @@
-# Finding User Purchases
-# Write a query that'll identify returning active users. A returning active user is a user that has made a second purchase within 7 days of any other of their purchases. 
-# Output a list of user_ids of these returning active users.
-# https://platform.stratascratch.com/coding/10322-finding-user-purchases?code_type=1
+-- Finding User Purchases
+-- Write a query that'll identify returning active users. A returning active user is a user that has made a second purchase within 7 days of any other of their purchases. 
+-- Output a list of user_ids of these returning active users.
+-- https://platform.stratascratch.com/coding/10322-finding-user-purchases?code_type=1
 
 # amazon_transactions
 # id: int
