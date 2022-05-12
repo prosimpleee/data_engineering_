@@ -52,4 +52,5 @@ df = spark.table('your_view')
 
 **5. FAANG_stocks:**
 - Build graphs of stock price changes for the last 2 years.
+
 [Click here: FAANG_stocks project](https://github.com/prosimpleee/data_engineering_/blob/main/python_pyspark/FAANG_stocks.ipynb) 
