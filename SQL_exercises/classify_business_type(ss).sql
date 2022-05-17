@@ -24,7 +24,7 @@
 
 select distinct business_name, case when business_name ilike '%cafe%' or 
                                 business_name ilike '%coffee%' or 
-                                business_name ilike '%caf?%'   then 'cafe'
+                                business_name ilike '%café%'   then 'cafe'
                            when business_name ilike '%restaurant%' then 'restaurant' 
                            when business_name ilike '%school%' then 'school'
                            else 'other' end as business_type 
