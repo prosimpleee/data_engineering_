@@ -41,5 +41,4 @@ def sql_query_mssql():
 
 sql_query_mssql()
 ```
-[Click here: Python File]
-(https://github.com/prosimpleee/data_engineering_/blob/main/connection_python_to_sql/python_to_mssql.py)
+[Click here: Python to MSSQL](https://github.com/prosimpleee/data_engineering_/blob/main/connection_python_to_sql/python_to_mssql.py)
