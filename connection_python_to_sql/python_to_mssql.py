@@ -11,10 +11,10 @@ password = 'Password'
 
 def connection_mssql(driver, server, database, login, password):
     connection_str = 'Driver=' + driver + ';' \
-                                          'Server=' + server + ';' \
-                                                               'Database=' + database + ';' \
-                                                                                        'UID=' + login + ';' \
-                                                                                                         'PWD=' + password
+                     'Server=' + server + ';' \
+                     'Database=' + database + ';' \
+                     'UID=' + login + ';' \
+                     'PWD=' + password
     connection_url = URL.create("mssql+pyodbc", query={"odbc_connect": connection_str})
     engine = create_engine(connection_url)
     return engine
