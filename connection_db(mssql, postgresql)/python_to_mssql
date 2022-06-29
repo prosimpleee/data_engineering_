@@ -1,25 +1,14 @@
-# Connection Python to MSSQL
-
-## MSSQL to Python using SqlAlchemy.
-
-Import Libraries:  
-```python
 import pandas
 from sqlalchemy.engine import URL
 from sqlalchemy import create_engine
-```
 
-Variable Definition:
-```python
 driver = '{SQL Server}'
 server = 'SQL Server Name'
 database = 'Database Name'
 login = 'Login Name'
 password = 'Password'
-```
 
-Connection to MSSQL:
-```python
+
 def connection_mssql(driver, server, database, login, password):
     connection_str = 'Driver=' + driver + ';' \
                      'Server=' + server + ';' \
@@ -40,4 +29,3 @@ def sql_query_mssql():
     print(query_df)
 
 sql_query_mssql()
-```
