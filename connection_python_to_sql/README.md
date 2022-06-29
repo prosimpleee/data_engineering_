@@ -42,4 +42,4 @@ def sql_query_mssql():
 sql_query_mssql()
 ```
 [Click here: Python File]
-(https://github.com/prosimpleee/data_engineering_/blob/main/connection_db(mssql%2C%20postgresql)/python_to_mssql.py)
+(https://github.com/prosimpleee/data_engineering_/blob/main/connection_python_to_sql/python_to_mssql.py)
