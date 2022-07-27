@@ -28,6 +28,7 @@ docker run -it \
 ```python
 engine = create_engine('postgresql://root:root@localhost:5432/ny_taxi')
 df = pd.read_parquet('yellow_tripdata_2021-01.parquet', engine='pyarrow')
+pd.io.sql.get_schema(df, name = 'yellow_taxi_data', con = engine)
 df.to_sql(name="yellow_taxi_data", con=engine, if_exists="replace")
 ```
 ## 4. Connecting to PgAdmin
