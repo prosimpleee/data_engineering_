@@ -48,7 +48,7 @@ Logging into to PgAdmin
 ## 6. Create a connection 
 ![image](https://user-images.githubusercontent.com/55916170/181265984-3344a392-3ccd-4c96-8f4b-b8314d506b20.png)
 
-## 7. Success
+## 7. Success!!!
 ![image](https://user-images.githubusercontent.com/55916170/181266778-b2e16c84-7bd0-4291-8725-600d2b19da04.png)
 
 
