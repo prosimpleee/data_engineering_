@@ -51,6 +51,13 @@ Logging into to PgAdmin
 ## 7. Success!!!
 ![image](https://user-images.githubusercontent.com/55916170/181266778-b2e16c84-7bd0-4291-8725-600d2b19da04.png)
 
+## Connection with docker-compose
+```docker
+docker-compose up
+```
+
+[Click here: docker-compose file](https://github.com/prosimpleee/data_engineering_/blob/main/data-engineering-zoomcamp/week_1_basics_n_setup/docker-compose.yaml)
+
 
 
 
