@@ -1,7 +1,7 @@
 # DWH Architecture
 
 Data Warehouse is primarily optimized for reporting and analytics.
-Between staging and business layer we can use ODS layer. For ODS layer is convenient to use to check the data received in staging, as a rule, the check is performed by the number of rows.
+Between staging and business layer we can use ODS layer. ODS layer is convenient to use to check the data received in staging, as a rule, the check is performed by the number of rows.
 
 ## What problems may arise if we start writing analytical queries and building reports based on OLTP?
 
