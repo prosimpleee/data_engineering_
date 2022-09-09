@@ -1,7 +1,7 @@
 # Physical aspects of DWH: #
 Requirements for the physical structure of DWH
 
-## Partition:
+## Partition Scheme:
 ```sql
 -- 1 Step:
 CREATE PARTITION FUNCTION PartDate (column_type)
