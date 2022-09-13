@@ -43,7 +43,7 @@ IGNORE_UTF8_ERRORS = FALSE;
 
 6. Create a temporary table
 ```sql
-CREATE OR REPLACE TEMPORARY TABLE raw_planes_data (
+CREATE OR REPLACE TEMPORARY TABLE RAW.raw_planes_data (
 json_data  variant 
 );
 ```
@@ -78,6 +78,8 @@ FROM RAW.RAW_PLANES_DATA, TABLE(flatten($1:models)) f;
 SELECT *
 FROM PUBLIC.PLANES
 ```
+![image](https://user-images.githubusercontent.com/55916170/189858903-c3f11708-6365-4d53-bd82-0977984b2ffb.png)
+
 
 (Pipeline is available by the link: )
 
