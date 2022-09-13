@@ -1,4 +1,4 @@
-# Snowflake
+# Snowflake + S3 + Airflow + Python
 
 Some steps to download data from AWS S3 Bucket to Snowflake
 
