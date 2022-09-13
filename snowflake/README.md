@@ -41,7 +41,7 @@ STRIP_NULL_VALUES = FALSE
 IGNORE_UTF8_ERRORS = FALSE;
 ```
 
-6. Create a temporary table
+6. Create a TEMPORARY TABLE
 ```sql
 CREATE OR REPLACE TEMPORARY TABLE RAW.raw_planes_data (
 json_data  variant 
