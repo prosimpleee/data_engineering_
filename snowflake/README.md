@@ -81,7 +81,7 @@ FROM PUBLIC.PLANES
 ![image](https://user-images.githubusercontent.com/55916170/189858903-c3f11708-6365-4d53-bd82-0977984b2ffb.png)
 
 
-(Pipeline is available by the link: )
+[Planes Pipeline is available by the link ](https://github.com/prosimpleee/data_engineering_/blob/main/snowflake/dags/planes_snowflake_s3.py)
 
 
 
