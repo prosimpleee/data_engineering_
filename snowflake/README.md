@@ -23,7 +23,7 @@ DESCRIBE STORAGE INTEGRATION s3_integration_full;
 
 4. Create a stage (Paragraph 1)
 ```sql
-CREATE OR REPLACE STAGE bronze_stage
+CREATE OR REPLACE STAGE RAW.bronze_stage
 URL = 'S3 Bucket URL'
 STORAGE_INTEGRATION = s3_integration_full;
 ```
