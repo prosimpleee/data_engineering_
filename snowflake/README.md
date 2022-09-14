@@ -1,5 +1,5 @@
-# Snowflake + S3 + Airflow + Python
-
+# Snowflake + S3 + API + Airflow + Python. The Snoflake Pipe below is available using SQS + S3.
+ 
 Some steps to download data from AWS S3 Bucket to Snowflake
 
 1. We create a storage system integrator
@@ -81,8 +81,142 @@ FROM PUBLIC.PLANES
 ![image](https://user-images.githubusercontent.com/55916170/189858903-c3f11708-6365-4d53-bd82-0977984b2ffb.png)
 
 
+# Snowflake Pipe + SQS + S3
+
+1. Choose DB & Schema
+```sql
+CREATE DATABASE snow_pipe_superstore ;
+
+CREATE SCHEMA raw_snow_pipe ;
+```
+
+2. Create storage integration (S3 & Snowflake)
+```sql
+CREATE OR REPLACE STORAGE INTEGRATION s3_int
+TYPE = EXTERNAL_STAGE
+STORAGE_PROVIDER = s3
+STORAGE_AWS_ROLE_ARN = 'arn:aws:iam::256535007744:role/snow-pipe-superstore-role' -- Our Role
+ENABLED = true
+STORAGE_ALLOWED_LOCATIONS = ('s3://snow-pipe-superstore/') ; -- Our S3 Bucket
+```
+
+3. Important values for change "Trust relationships" in our Role
+```sql
+DESC INTEGRATION s3_int ;
+```
+![image](https://user-images.githubusercontent.com/55916170/190140266-73c7596f-8fd8-4f13-ac37-7d65f066c4a7.png)
+
+4. Put the values (STORAGE_AWS_IAM_USER_ARN & STORAGE_AWS_EXTERNAL_ID) into AWS Role 
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "STORAGE_AWS_IAM_USER_ARN"
+            },
+            "Action": "sts:AssumeRole",
+            "Condition": {
+                "StringEquals": {
+                    "sts:ExternalId": "STORAGE_AWS_EXTERNAL_ID"
+                }
+            }
+        }
+    ]
+}
+```
+
+5. Сreate a place where we will take the data
+```sql
+CREATE OR REPLACE STAGE raw_snow_pipe.raw_superstore_data
+URL = 's3://snow-pipe-superstore'
+STORAGE_INTEGRATION = s3_int ; -- Our Storage Integration (Paragraph 2)
+```
+
+6. Create File Format for CSV using sql script
+```sql
+ CREATE or replace FILE FORMAT RAW_SNOW_PIPE.CSV_FORMAT 
+ TYPE = 'CSV' 
+ COMPRESSION = 'AUTO' 
+ FIELD_DELIMITER = ',' 
+ RECORD_DELIMITER = '\n' 
+ SKIP_HEADER = 1 
+ FIELD_OPTIONALLY_ENCLOSED_BY = 'NONE' 
+ TRIM_SPACE = FALSE 
+ ERROR_ON_COLUMN_COUNT_MISMATCH = TRUE 
+ ESCAPE = 'NONE' 
+ ESCAPE_UNENCLOSED_FIELD = '\134' 
+ DATE_FORMAT = 'AUTO' 
+ TIMESTAMP_FORMAT = 'AUTO' 
+ NULL_IF = ('\\N') ;
+ ```
+ 
+ 7. Create a table where data will be added
+ ```sql
+  CREATE OR REPLACE TABLE RAW_SNOW_PIPE.STAGE_RAW_SUPERSTORE( 
+ Row_number int,
+ Raw_ID text,
+ Order_ID text,
+ Order_Date date,
+ Ship_Date text,
+ Ship_Mode text, 
+ Customer_ID text, 
+ Customer_Name text,
+ Segment text,
+ Country text,
+ City text,
+ State text,	
+ Postal_Code int,
+ Region text,
+ Product_ID text,
+ Category text,
+ Sub_Category text,
+ Product_Name text,
+ Sales text,
+ Quantity int,
+ Discount float,
+ Profit float ;)
+ ```
+
+8. Creating our Snowflake Pipe
+```sql
+CREATE OR REPLACE PIPE RAW_SNOW_PIPE.superstore_pipe
+AUTO_INGEST = true as 
+COPY INTO RAW_SNOW_PIPE.STAGE_RAW_SUPERSTORE -- Our table (Paragraph 7)
+FROM @raw_snow_pipe.raw_superstore_data -- Our Stage (Paragraph 5)
+FILE_FORMAT = CSV_FORMAT
+ON_ERROR="CONTINUE" ;
+```
+
+9. Here we need a field: notification_channel
+```sql
+SHOW PIPES ;
+```
+
+10. We put the value (notification_channel) to YourBucket -> Properties -> Event notifications -> Destination -> SQS queue -> Enter SQS queue ARN
+
+![image](https://user-images.githubusercontent.com/55916170/190142961-bf00cfb8-6b8a-4be9-b1c0-a42165683339.png)
+
+11. Displaying the status of our pipe. Should be : RUNNING
+```sql
+SELECT system$pipe_status('RAW_SNOW_PIPE.superstore_pipe') ;
+```
+
+12. Upload your CSV file to S3 Bucket and wait few second !!!
+
+13. We can see how correctly our data loaded into the our table in Snowflake (RAW_SNOW_PIPE.STAGE_RAW_SUPERSTORE)
+```sql
+SELECT *
+FROM table (INFORMATION_SCHEMA.copy_history(table_name=> 'RAW_SNOW_PIPE.STAGE_RAW_SUPERSTORE', start_time=> dateadd(hours, -1, current_timestamp())))
+```
+
+14. Making a SELECT and looking at our data :)
+```sql
+SELECT * 
+FROM RAW_SNOW_PIPE.STAGE_RAW_SUPERSTORE
+```
+
+
 [Planes Pipeline is available by the link ](https://github.com/prosimpleee/data_engineering_/blob/main/snowflake/dags/planes_snowflake_s3.py)
-
-
-
 
