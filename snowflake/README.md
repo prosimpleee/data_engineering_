@@ -219,6 +219,7 @@ SELECT *
 FROM RAW_SNOW_PIPE.STAGE_RAW_SUPERSTORE
 ```
 
+![image](https://user-images.githubusercontent.com/55916170/190147209-ad853762-a175-4705-a28f-98c31a7eb08e.png)
 
 
 
