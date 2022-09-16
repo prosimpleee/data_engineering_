@@ -9,6 +9,10 @@ Example below:
 Solution: 
 
 ```python
+import csv
+import re
+import pandas as pd
+
 with open('your_file.csv', 'r') as csv_file:
     csvReader = csv.DictReader(csv_file)
     data = []
