@@ -31,4 +31,5 @@ with open('your_file.csv', 'r') as csv_file:
                 'target_size' : k[1]})
     df = pd.DataFrame(data)
     df.to_csv('name_new_file.csv', index=False)
-   
+```   
+- [Click here: parse_reg_exp.py](https://github.com/prosimpleee/data_engineering_/blob/main/python_scripts/parse_reg_exp.py) 
