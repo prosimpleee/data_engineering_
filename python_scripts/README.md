@@ -4,7 +4,7 @@ The data in the array is separated by a comma. We need to use regular expression
 
 Example below: 
 
-- ({[1, 312], [2, 175], [3, 364], ..}) # (PARAGRAPH 1)
+- Column has array: {[1, 312], [2, 175], [3, 364], ..} # (PARAGRAPH 1)
 
 Solution: 
 
