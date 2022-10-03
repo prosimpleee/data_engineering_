@@ -4,6 +4,8 @@ I take all tasks from site: https://www.stratascratch.com
 
 The following are options for writing queries from beginner to advanced level. Some requests consist of several solutions.
 
+## Issues:
+
 Average Salaries: Salesforce (Easy)
 - [Average Salary task](https://github.com/prosimpleee/data_engineering_/blob/main/SQL_exercises/average_salaries(ss).sql)
 
