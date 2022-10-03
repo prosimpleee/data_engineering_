@@ -2,14 +2,14 @@
 
 A few important steps to get connected to MSSQL.
 
-## 1. Import Libraries:  
+1. Import Libraries:  
 ```python
 import pandas
 from sqlalchemy.engine import URL
 from sqlalchemy import create_engine
 ```
 
-## 2. Variable Definition:
+2. Variable Definition:
 ```python
 driver = '{SQL Server}'
 server = 'SQL Server Name'
@@ -18,7 +18,7 @@ login = 'Login Name'
 password = 'Password'
 ```
 
-## 3. Connection to MSSQL:
+3. Connection to MSSQL:
 ```python
 def connection_mssql(driver, server, database, login, password):
     connection_str = 'Driver=' + driver + ';' \
@@ -33,8 +33,7 @@ def connection_mssql(driver, server, database, login, password):
 connection_mssql(driver, server, database, login, password)
 ```
 
-## 4. Write a query:
-
+4. Write a query:
 ```python
 def sql_query_mssql():
     sql_query = pandas.read_sql_query('''select top 10 * from Schema.YourTable''',
