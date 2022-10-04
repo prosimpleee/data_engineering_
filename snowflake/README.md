@@ -85,7 +85,7 @@ FROM PUBLIC.PLANES
 
 # Snowflake Pipe + SQS + S3
 
-1. Choose DB & Schema
+1. Create DB & Schema
 ```sql
 CREATE DATABASE snow_pipe_superstore ;
 
