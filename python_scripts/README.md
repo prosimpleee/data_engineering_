@@ -4,7 +4,7 @@ The data in the array is separated by a comma. We need to use regular expression
 
 Example below: 
 
-- Column has array: {[1, 312], [2, 175], [3, 364], ..} # (PARAGRAPH 1)
+- Audiences Column has array: {[1, 312], [2, 175], [3, 364], ..} # (PARAGRAPH 1)
 
 Solution: 
 
@@ -17,7 +17,7 @@ with open('your_file.csv', 'r') as csv_file:
     csvReader = csv.DictReader(csv_file)
     data = []
     for rows in csvReader:
-        s = re.sub("[^0-9,]", " ", rows['PARAGRAPH 1']).strip().split(' , ')
+        s = re.sub("[^0-9,]", " ", rows['audiences']).strip().split(' , ')
         d = [x.split(',') for x in s]
         for k in d:
             data.append({
