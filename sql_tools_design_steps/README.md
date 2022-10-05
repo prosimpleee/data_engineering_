@@ -24,13 +24,13 @@ CREATE PARTITION SCHEME scheme_name
  - Partition allows you to conveniently transfer data for the desired day/week/month or year.
  - Splits the fact table into sections by date, which can be placed on different filegroups (different disks).
  
- [Partition Function & Scheme](https://github.com/prosimpleee/data_engineering_/blob/main/sql_tools_design_steps/partition_orders.sql)
+ **[Partition Function & Scheme](https://github.com/prosimpleee/data_engineering_/blob/main/sql_tools_design_steps/partition_orders.sql)**
  
 ## Indexes in the fact table:
 - Clustered Index by date_id.
 - Non clustered index by important foreign keys.
 
-[Clustered & Non Clustered & ColumnStore Indexes](https://github.com/prosimpleee/data_engineering_/blob/main/sql_tools_design_steps/indexes_orders.sql)
+**[Clustered & Non Clustered & ColumnStore Indexes](https://github.com/prosimpleee/data_engineering_/blob/main/sql_tools_design_steps/indexes_orders.sql)**
 
 ## Indexes in dim Tables:
 - Clustered Index by business key.
@@ -41,10 +41,10 @@ CREATE PARTITION SCHEME scheme_name
 ## Materialized Views:
 - Stores the execution of the request instead of the text of the request.
 
-[Materialized View](https://github.com/prosimpleee/data_engineering_/blob/main/sql_tools_design_steps/materialized_view.sql)
+**[Materialized View](https://github.com/prosimpleee/data_engineering_/blob/main/sql_tools_design_steps/materialized_view.sql)**
 
 ## Data Compression:
 - Method Page - for archived data (old partitions).
 - Method Row - for almost new data.
 
-[Data Compression](https://github.com/prosimpleee/data_engineering_/blob/main/sql_tools_design_steps/data_compression.sql)
+**[Data Compression](https://github.com/prosimpleee/data_engineering_/blob/main/sql_tools_design_steps/data_compression.sql)**
