@@ -44,7 +44,7 @@ with DAG(
 ) as dag:
 ```
 4. Dags examples:
-- [Covid Status ETL](https://github.com/prosimpleee/data_engineering_/blob/main/airflow_dags/covid_status_etl/covid_status.py) 
-- [Currency ETL](https://github.com/prosimpleee/data_engineering_/blob/main/airflow_dags/currency_etl/currency_etl.py) 
-- [Tables Names](https://github.com/prosimpleee/data_engineering_/blob/main/airflow_dags/tables_prod_postgresql/tables_prod.py) 
-- [Traders Data](https://github.com/prosimpleee/data_engineering_/blob/main/airflow_dags/traders_data/extract_traders_data.py) 
+- **[Covid Status ETL](https://github.com/prosimpleee/data_engineering_/blob/main/airflow_dags/covid_status_etl/covid_status.py)**
+- **[Currency ETL](https://github.com/prosimpleee/data_engineering_/blob/main/airflow_dags/currency_etl/currency_etl.py)** 
+- **[Tables Names](https://github.com/prosimpleee/data_engineering_/blob/main/airflow_dags/tables_prod_postgresql/tables_prod.py)** 
+- **[Traders Data](https://github.com/prosimpleee/data_engineering_/blob/main/airflow_dags/traders_data/extract_traders_data.py)** 
