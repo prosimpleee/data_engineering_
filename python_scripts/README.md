@@ -2,11 +2,11 @@
 
 The data in the array is separated by a comma. We need to use regular expressions.
 
-Example below: 
+**Example below:**
 
 - Audiences Column has array: {[1, 312], [2, 175], [3, 364], ..} # (PARAGRAPH 1)
 
-Solution: 
+**Solution:**
 
 ```python
 import csv
