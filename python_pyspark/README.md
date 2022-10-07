@@ -4,7 +4,9 @@ This is a very powerful tool that I would like to use on a regular basis.
 
 It allows you to process more data than the RAM of the machine + can process data on several machines, yet Pandas does not have such an option.
 
-## Create session:
+## Connection PySpark:
+
+**1. Create session:**
 ```python
 from pyspark.sql import SparkSession
 import pyspark.sql.functions as F
@@ -12,7 +14,7 @@ import datetime
 spark = SparkSession.builder.getOrCreate()
 ```
 
-## Read a file:
+**2. Read a file:**
 ```python
 spark \
   .read \
@@ -22,7 +24,7 @@ spark \
   .createOrReplaceTempView('business_sales') # create view
 ```
 
-## Create a dataframe:
+**3. Create a dataframe:**
 ```python
 df = spark.table('your_view')
 ```
