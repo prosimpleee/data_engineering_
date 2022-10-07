@@ -2,7 +2,7 @@
 
 I used Airflow to orchestrate ETL processes. It was possible to set up airflow based on PostgreSQL for meta data.
 
-1. Import Libs:
+**1. Import Libs:**
 ```python
 import requests
 import json
@@ -24,7 +24,7 @@ import pyspark.sql.functions as F
 import numpy as np
 ```
 
-2. Write a default args:
+**2. Write a default args:**
 ```python
 default_args = {
       'owner': 'owner_name',
@@ -33,7 +33,7 @@ default_args = {
 }
 ```
 
-3. Create a DAG:
+**3. Create a DAG:**
 ```python
 with DAG(
        dag_id='dag_name',
@@ -43,7 +43,7 @@ with DAG(
        default_args=default_args
 ) as dag:
 ```
-4. Dags examples:
+**4. Dags examples:**
 - **[Covid Status ETL](https://github.com/prosimpleee/data_engineering_/blob/main/airflow_dags/covid_status_etl/covid_status.py)**
 - **[Currency ETL](https://github.com/prosimpleee/data_engineering_/blob/main/airflow_dags/currency_etl/currency_etl.py)** 
 - **[Tables Names](https://github.com/prosimpleee/data_engineering_/blob/main/airflow_dags/tables_prod_postgresql/tables_prod.py)** 
