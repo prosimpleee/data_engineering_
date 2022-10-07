@@ -15,5 +15,5 @@ I separated the mutable part from the immutable part. This can be seen in the ex
 - Satilite is an adjective that describes the properties of zabs or links. Contains the key of the hub or link. 
 Almost always historical (therefore dates from_date/to_date - for SCD 2)
 
-An example of my model is below:
+**An example of my model is below:**
 ![data_vault](https://user-images.githubusercontent.com/55916170/187229547-040de9a0-75b5-4e77-8d5c-834c900a31ba.png)
