@@ -55,7 +55,7 @@ Logging into to PgAdmin
 
 ![image](https://user-images.githubusercontent.com/55916170/181266778-b2e16c84-7bd0-4291-8725-600d2b19da04.png)
 
-**Connection with docker-compose**
+##Connection with docker-compose
 
 ```docker
 docker-compose up
