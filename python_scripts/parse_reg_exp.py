@@ -11,7 +11,7 @@ with open('your_file.csv', 'r') as csv_file:
         for k in d:
             data.append({
                 'event_id': rows['event_id'],
-                'content_id': rows['barb_content_id'],
+                'content_id': rows['content_id'],
                 'date_update': rows['date_of_transmission'],
                 'phone_code': rows['db2_station_code'],
                 'start_time':rows['start_time'],
