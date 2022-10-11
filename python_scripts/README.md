@@ -1,4 +1,4 @@
-# Parsing a file where the column contains an array. 
+# 1. Parsing a file where the column contains an array. 
 
 The data in the array is separated by a comma. We need to use regular expressions.
 
@@ -35,7 +35,7 @@ with open('your_file.csv', 'r') as csv_file:
 **[Click here: parse_reg_exp.py](https://github.com/prosimpleee/data_engineering_/blob/main/python_scripts/parse_reg_exp.py)**
 
 
-# Data generation (every 1-minute for 31 days)
+# 2. Data generation (every 1-minute for 31 days)
 
 With the help of a Snowflake, we pull out the necessary data, on the basis of which we will generate data.
 
