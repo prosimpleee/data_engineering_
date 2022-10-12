@@ -2,7 +2,7 @@
 
 I will try to explain the implementation of OOPs in Python as simply as possible.
 
-**Classes, Attributes, Methods:**
+**Classes, Attributes, Methods**
  
 - To create a ***class***, we need to write:
 ```python
@@ -59,7 +59,7 @@ our_first_instance = OurClass()
 our_first_instance.method_hello() # call the method, returned Hello World!
 ```
 
-***Encapsulation:***
+***Encapsulation***
 
 Allows you to hide the behavior of an object inside a class through __something
 ```python
@@ -77,4 +77,37 @@ lionel_messi.name_messi() # method, retruned: He is Lionel
 print(lionel_messi.__name()) # PRIVATE ATTRIBUTE, returned: Error   !!!!!!!!!!!!
 lionel_messi.__age_messi() # PRIVATE METHOD, returned: Error   !!!!!!!!!!!!
 print(lionel_messi.age) # attr, returned: 35
+```
+
+***Inheritance***
+
+We can inherit attributes and methods in a SubClass thanks to the ParentClass!!!
+```python
+class PsgClub: #ParentClass
+    club = 'PSG'
+    def player_club(self):
+        print('We are team!')
+
+
+class MessiPlayer(PsgClub): #SubClass from ParentClass
+    name = 'Lionel Messi'
+    age = 35
+    def show_information(self):
+        print(f'Name- {MessiPlayer.name}, Age- {MessiPlayer.age}, Club- {MessiPlayer.club} ') # an attribute from the ParentClass is available to us
+
+
+messi_information = MessiPlayer()
+messi_information.show_information() # Returned: Name- Lionel Messi, Age- 35, Club- PSG
+messi_information.player_club() # a method from the ParentClass is available to us
+print(issubclass(MessiPlayer, PsgClub)) # True
+```
+
+***Polymorphism***
+
+Different vision of the same method in classes
+```python
+print(30 + 5)
+# Returned: 35
+print("30" + "5")
+# Returned: "305"
 ```
