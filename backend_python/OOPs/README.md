@@ -4,12 +4,12 @@ I will try to explain the implementation of OOPs in Python as simply as possible
 
 **Classes, Attributes, Methods**
  
-- To create a ***class***, we need to write:
+To create a ***class***, we need to write:
 ```python
 class OurClass:
 ```
 
-- To create a ***attributes*** for our class, we need to write:
+To create a ***attributes*** for our class, we need to write:
 ```python
 class OurClass:
   first_attributes = "Hello World!"
