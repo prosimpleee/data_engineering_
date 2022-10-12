@@ -66,7 +66,6 @@ Allows you to hide the behavior of an object inside a class through __something
 class FootballPlayer:
     def name_messi(self):
         print('He is Lionel')
-    
     __name = 'Lionel'
     
     def __age_messi(self):
