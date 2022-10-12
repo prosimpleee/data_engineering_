@@ -41,7 +41,7 @@ class FootballPlayer:
         self.age = age
 
 lionel_messi = FootballPlayer('Lionel Messi', 'PSG', 'Right Winger', 35)
-print(lionel_messi.position) # call the position, return: Right Winger
+print(lionel_messi.position) # call the position, returned: Right Winger
 ```
 
 ***@staticmethod*** 
@@ -53,7 +53,7 @@ class OurClass:
     def method_hello():
         print('Hello World!')
 
-OurClass.method_hello() # return: Hello World!
+OurClass.method_hello() # returned: Hello World!
 # the same
 our_first_instance = OurClass() 
 our_first_instance.method_hello() # call the method, returned Hello World!
