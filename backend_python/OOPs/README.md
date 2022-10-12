@@ -31,7 +31,7 @@ our_first_instance.method_hello() # call the method, returned Hello World!
 
 ***Initializer*** 
 
-__init__: self = lionel_messi (instance of the class) 
+Method init: self = lionel_messi (instance of the class) 
 ```python
 class FootballPlayer:
     def __init__(self, name, club, position, age):
