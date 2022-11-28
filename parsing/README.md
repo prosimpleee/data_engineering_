@@ -4,7 +4,7 @@ I extracted the first 1000 vacancies from LinkedIn jobs for a Project Manager po
 
 I did this for educational purposes only!!!
 
-For this project I used: Python(bf4, selenium), Databricks(pyspark).
+For this project I used: Python(bf4, selenium), Azure Databricks(pyspark).
 
 Insights that I found on 950 vacancies:
 
