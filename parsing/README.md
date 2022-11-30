@@ -1,6 +1,8 @@
-## Linkedin Jobs (Beautiful Soup, Selenium, Databricks)
+## Projects:
 
-I extracted the first 1000 vacancies from LinkedIn jobs for a Project Manager position in Poland. 
+**1. Linkedin Jobs (Beautiful Soup, Selenium, Azure Databricks)**
+
+**[I extracted the first 1000 vacancies from LinkedIn jobs for a Project Manager position in Poland](https://github.com/prosimpleee/data_engineering_/blob/main/parsing/linkedin_extract_jobs.py)**
 
 I did this for educational purposes only!!!
 
