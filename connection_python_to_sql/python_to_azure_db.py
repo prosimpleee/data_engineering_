@@ -3,9 +3,9 @@ import psycopg2
 import pandas as pd
 
 
-POSTGRES_USER = 'LinkedinForPython'
-POSTGRES_PASS = 'hey1DBConnection'
-POSTGRES_HOST = 'for-linkedin.postgres.database.azure.com'
+POSTGRES_USER = 'USER'
+POSTGRES_PASS = 'PASSWORD'
+POSTGRES_HOST = 'AZURE_HOST'
 POSTGRES_PORT = 5432
 POSTGRES_DB = 'postgres'
 
