@@ -56,3 +56,6 @@ The following are options for writing queries from beginner to advanced level. S
 
 **17. Workers With The Highest Salaries: DoorDash (Medium)**
 - **[Workers With The Highest Salaries task](https://github.com/prosimpleee/data_engineering_/blob/main/SQL_exercises/workers_with_the_highest_salaries(ss).sql)**
+
+**18. Most Profitable Companies (Medium)**
+- **[Most Profitable Companies task](https://github.com/prosimpleee/data_engineering_/blob/main/SQL_exercises/most_profitable_companies(ss).sql)**
