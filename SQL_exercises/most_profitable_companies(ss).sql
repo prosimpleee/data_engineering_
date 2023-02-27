@@ -5,17 +5,17 @@
 -- https://platform.stratascratch.com/coding/10354-most-profitable-companies
 
 # forbes_global_2010_2014
-company: varchar
-sector: varchar
-industry: varchar
-continent: varchar
-country: varchar
-marketvalue: float
-sales: float
-profits: float
-assets: float
-rank: int
-forbeswebpage: varchar
+# company: varchar
+# sector: varchar
+# industry: varchar
+# continent: varchar
+# country: varchar
+# marketvalue: float
+# sales: float
+# profits: float
+# assets: float
+# rank: int
+# forbeswebpage: varchar
 
 with cte as (
 select company, 
