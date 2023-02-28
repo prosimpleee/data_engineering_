@@ -1,4 +1,4 @@
-## Certifications: 
+# **[My Linkedin](https://www.linkedin.com/in/dmitry-ryzhov/)** & **[GitHub](https://github.com/prosimpleee/data_engineering_)**
 
 **[1. Microsoft Certified: Azure Fundamentals (AZ-900): click here!](https://www.credly.com/badges/be99d7c8-dec9-4af2-8db3-88bd5c431f53/linked_in?t=ron9fk)**
 
@@ -14,4 +14,3 @@
 
 ![Untitled (21)_page-0001](https://user-images.githubusercontent.com/55916170/221839734-6ce9c87f-1bc9-494b-971b-699880fb28e5.jpg)
 
-**[My Linkedin](https://www.linkedin.com/in/dmitry-ryzhov/)** & **[GitHub](https://github.com/prosimpleee/data_engineering_)**
