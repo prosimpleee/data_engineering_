@@ -2,7 +2,7 @@
 
 Here you can see the level of my mastery of Power BI. The source of the database is the **AdventureWorksDW2020** test database.
 
-To create a report source, I used views from the SQL Server (Views) and DAX operations.
+To creаte a report source, I used views from the SQL Server (Views) and DAX operations.
 
 ## Dashboards:
 
