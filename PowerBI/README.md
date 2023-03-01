@@ -9,3 +9,7 @@ To create a report source, I used views from the SQL Server (Views) and DAX oper
 **1. Adventure Works Dashboard General**
 
 **[Adventure Works Dashboard General: click here!](https://github.com/prosimpleee/data_engineering_/blob/main/PowerBI/Adventure_Works_Dashboard_General_PoweBI.pdf)**
+
+**2. Adventure Works Dashboard Preferably EMU & USA PowerBI**
+
+**[Adventure Works Dashboard Preferably EMU & USA PowerBI: click here!](https://github.com/prosimpleee/data_engineering_/blob/main/PowerBI/Adventure_Works_Dashboard_Preferably_EMU%26USA_PowerBI.pdf)**
