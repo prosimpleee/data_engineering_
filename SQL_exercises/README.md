@@ -59,3 +59,6 @@ The following are options for writing queries from beginner to advanced level. S
 
 **18. Most Profitable Companies (Medium)**
 - **[Most Profitable Companies task](https://github.com/prosimpleee/data_engineering_/blob/main/SQL_exercises/most_profitable_companies(ss).sql)**
+
+**19. Users By Average Session Time: Facebook (Medium)**
+- **[Users By Average Session Time task](https://github.com/prosimpleee/data_engineering_/blob/main/SQL_exercises/users_by_average_session_time(ss).sql)**
