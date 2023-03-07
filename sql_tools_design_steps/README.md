@@ -36,7 +36,7 @@ CREATE PARTITION SCHEME scheme_name
 - Clustered Index by business key.
 - Non clustered index by surrogate key and by frequently used attributes (+ include option).
 - Filter Indexes - take up little space, convenient for frequently requested attributes, if the query does not get into the index, the query execution speed will decrease.
-- ColumnStore Index – is best adapted for aggregation.
+- ColumnStore Index – is best adapted for aggregation/ filtering.
 
 ## Materialized Views:
 - Stores the execution of the request instead of the text of the request.
