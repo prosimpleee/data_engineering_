@@ -34,3 +34,15 @@ select business_name,
 	   cnt
 from cte
 where cnt = (select max(cnt) from cte)
+
+-- Solution 3:
+SELECT business_name, 
+       review_text, 
+       cool
+FROM (
+    SELECT business_name, 
+		   review_text, 
+		   cool, 
+		   rank() over (ORDER BY cool DESC) AS rnk
+    FROM yelp_reviews) AS new_table 
+WHERE rnk = 1
